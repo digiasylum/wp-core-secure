@@ -89,7 +89,7 @@ Toggle what you need, click Save — the plugin writes the correct `.htaccess` r
 
 ## 📥 Download
 
-Go to the **[Releases page](https://github.com/digiasylum/wp-core-secure/releases)** and download `wp-core-secure-v2.1.0.zip` from the Assets section of the latest release.
+Go to the **[Releases page](https://github.com/digiasylum/wp-core-secure/releases)** and download `wp-core-secure-v2.2.0.zip` from the Assets section of the latest release.
 
 ---
 
@@ -149,6 +149,14 @@ All `.htaccess` modifications use clearly named `BEGIN/END` marker blocks, for e
 ---
 
 ## 🔄 Changelog
+
+
+### v2.2.0
+- Full plugin refactor into professional multi-file structure
+- Separated: constants, htaccess, security, login, headers, api, admin, settings, view, CSS, JS
+- CSS and JS moved to dedicated files (admin/css/admin.css, admin/js/admin.js)
+- Settings page HTML extracted to admin/views/settings-page.php
+- Zero inline styles or inline scripts remain in PHP
 
 ### v2.1.0
 - Brute force login protection — IP lockout, configurable attempts (3–20), transient-based, proxy and Cloudflare aware
